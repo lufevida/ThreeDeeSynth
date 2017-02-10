@@ -41,18 +41,10 @@ The biggest anticipated challenge is to come up with a user interface that is as
 
 Below we present a series of videos describing the beginnings of *3D Synth* as a Max 7 program.
 
-### Part One
+[Part One](https://www.youtube.com/watch?v=TFRQtg3FMKE)
 
-[![Part One](https://img.youtube.com/vi/TFRQtg3FMKE/0.jpg)](https://www.youtube.com/watch?v=TFRQtg3FMKE)
+[Part Two](https://www.youtube.com/watch?v=IibGXZ_GOd4)
 
-### Part Two
+[Part Three](https://www.youtube.com/watch?v=s2PwPQEl7to)
 
-[![Part Two](https://img.youtube.com/vi/IibGXZ_GOd4/0.jpg)](https://www.youtube.com/watch?v=IibGXZ_GOd4)
-
-### Part Three
-
-[![Part Three](https://img.youtube.com/vi/s2PwPQEl7to/0.jpg)](https://www.youtube.com/watch?v=s2PwPQEl7to)
-
-### Part Four
-
-[![Part Four](https://img.youtube.com/vi/ELu0cdtQECY/0.jpg)](https://www.youtube.com/watch?v=ELu0cdtQECY)
+[Part Four](https://www.youtube.com/watch?v=ELu0cdtQECY)
