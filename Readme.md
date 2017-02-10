@@ -4,7 +4,7 @@
 
 This is the main repository for *3D Synth*, a software synthesizer that is capable positioning its sounds in a 3D space. *3D Synth* is being created by Luis F. Vieira Damiani, James Safko, and Gordon Pierce.
 
-[![Presentation One](https://img.youtube.com/vi/https://youtu.be/Cb7Vyj2r13E/0.jpg)](https://www.youtube.com/watch?v=https://youtu.be/Cb7Vyj2r13E)
+[Presentation One](https://www.youtube.com/watch?v=Cb7Vyj2r13E?list=FLx8viq1dhbrLlmMVLbDTQyw)
 
 ## Target Population
 
@@ -43,16 +43,16 @@ Below we present a series of videos describing the beginnings of *3D Synth* as a
 
 ### Part One
 
-[![Part One](https://img.youtube.com/vi/https://youtu.be/TFRQtg3FMKE/0.jpg)](https://www.youtube.com/watch?v=https://youtu.be/TFRQtg3FMKE)
+[![Part One](https://img.youtube.com/vi/TFRQtg3FMKE/0.jpg)](https://www.youtube.com/watch?v=TFRQtg3FMKE)
 
 ### Part Two
 
-[![Part Two](https://img.youtube.com/vi/https://youtu.be/IibGXZ_GOd4/0.jpg)](https://www.youtube.com/watch?v=https://youtu.be/IibGXZ_GOd4)
+[![Part Two](https://img.youtube.com/vi/IibGXZ_GOd4/0.jpg)](https://www.youtube.com/watch?v=IibGXZ_GOd4)
 
 ### Part Three
 
-[![Part Three](https://img.youtube.com/vi/https://youtu.be/s2PwPQEl7to/0.jpg)](https://www.youtube.com/watch?v=https://youtu.be/s2PwPQEl7to)
+[![Part Three](https://img.youtube.com/vi/s2PwPQEl7to/0.jpg)](https://www.youtube.com/watch?v=s2PwPQEl7to)
 
 ### Part Four
 
-[![Part Four](https://img.youtube.com/vi/https://youtu.be/https://youtu.be/ELu0cdtQECY/0.jpg)](https://www.youtube.com/watch?v=https://youtu.be/https://youtu.be/ELu0cdtQECY)
+[![Part Four](https://img.youtube.com/vi/ELu0cdtQECY/0.jpg)](https://www.youtube.com/watch?v=ELu0cdtQECY)
