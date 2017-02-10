@@ -4,7 +4,7 @@
 
 This is the main repository for *3D Synth*, a software synthesizer that is capable positioning its sounds in a 3D space. *3D Synth* is being created by Luis F. Vieira Damiani, James Safko, and Gordon Pierce.
 
-[Presentation One](https://www.youtube.com/watch?v=Cb7Vyj2r13E?list=FLx8viq1dhbrLlmMVLbDTQyw)
+[Click here for a video presentation of the project!](https://www.youtube.com/watch?v=Cb7Vyj2r13E?list=FLx8viq1dhbrLlmMVLbDTQyw)
 
 ## Target Population
 
