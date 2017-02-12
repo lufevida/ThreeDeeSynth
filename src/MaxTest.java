@@ -31,6 +31,9 @@ import com.cycling74.jitter.*;
  * Set signal vector size to 1024 and sample rate to 44100 in the DSP status menu (options->DSP Status). The reason for this is that
  * the Head Related Impulse Responses have been converted to the frequency domain with a fft size of 2048 (the pfft~ subpatches
  * operate on half fft size) and that they are based on 44100 samps/sec recordings.
+ * 
+ * TODO: sensor-based head tracking, room simulation.
+ * 
  */
 
 public class MaxTest extends MaxObject { // or MSPPerformer
