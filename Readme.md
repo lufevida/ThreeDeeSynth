@@ -4,7 +4,11 @@
 
 This is the main repository for *3D Synth*, a software synthesizer that is capable positioning its sounds in a 3D space. *3D Synth* is being created by Luis F. Vieira Damiani, James Safko, and Gordon Pierce.
 
-[Click here for a video presentation of the project!](https://www.youtube.com/watch?v=Cb7Vyj2r13E?list=FLx8viq1dhbrLlmMVLbDTQyw)
+[Click here for a video presentation of the project!](https://youtu.be/Cb7Vyj2r13E?list=FLx8viq1dhbrLlmMVLbDTQyw)
+
+## Acknowledgements
+
+*3D Synth* utilizes portions of [FFT-based binaural panner v3](http://jakobhandersen.dk/projects/fft-based-binaural-panner/download/) by Jakob H. Andersen. Head-related impulse responses are taken from [The CIPIC HRTF Database](http://interface.cipic.ucdavis.edu/sound/hrtf.html).
 
 ## Target Population
 
@@ -41,10 +45,10 @@ The biggest anticipated challenge is to come up with a user interface that is as
 
 Below we present a series of videos describing the beginnings of *3D Synth* as a Max 7 program.
 
-[Part One](https://www.youtube.com/watch?v=TFRQtg3FMKE)
+[Part One](https://youtu.be/TFRQtg3FMKE)
 
-[Part Two](https://www.youtube.com/watch?v=IibGXZ_GOd4)
+[Part Two](https://youtu.be/IibGXZ_GOd4)
 
-[Part Three](https://www.youtube.com/watch?v=s2PwPQEl7to)
+[Part Three](https://youtu.be/s2PwPQEl7to)
 
-[Part Four](https://www.youtube.com/watch?v=ELu0cdtQECY)
+[Part Four](https://youtu.be/ELu0cdtQECY)
