@@ -5,20 +5,47 @@ import com.cycling74.max.Atom;
 import com.cycling74.max.DataTypes;
 import com.cycling74.max.MaxObject;
 
-public class DirectionAndDistanceHandler extends MaxObject
-{
+/*
+ * DirectionAndDistanceHandler calculates the appropriate azimuth and elevation on the basis of a provided listener position
+ * (message: listenerPos x y z), sound position (message: soundPos x y z) and an optional listener rotation (message: listenerRot
+ * (unit quaternion)). It calculates the sound volume for both ears as well as the delay of the sound.
+ * 
+ * Positions are given in meters and the optional listener rotation is given with unit quaternions with the scalar part
+ * as first argument. Listener rotation is, however, not set in this patch.
+ * 
+ * Listener height and sound height range up to 5 meters, and the room size is a 10 by 10 meter square.
+ * 
+ * Drag the listener (node 1) and sound (node 2) to set their x, y position (horizontal). Their z position (height)
+ * is set by the sliders to the left. If no listener rotation is given, the listener is looking forward which is 'up' here.
+ * 
+ * The gain is 1 at 1 meter's distance, 2 at half a meter etc. Per default the DirectionAndDistanceHandler limits the gain to 5.,
+ * but you can set a custom gain limit by sending the message: gainLimit x
+ * 
+ * Outlets are:
+ * 1. Azimuth and elevation
+ * 2. Left ear gain
+ * 3. Right ear gain
+ * 4. Delay in ms (doppler)
+ */
+
+public class DirectionAndDistanceHandler extends MaxObject {
 	private Quat4f _listenerRot = new Quat4f(0,0,0,1);
 	private Vector3f _listenerPos = new Vector3f();
 	private Vector3f _soundPos = new Vector3f();
 	private Vector3f _listToSound = new Vector3f();
 	private float _relDist = 0;
 	private float _headRadius = 0.11f;
-
-	private float _commonPart1;// b^2 + c^2 Used to calculate the distance to left and right ear
-	private float _commonPart2;// 2bc Used to calculate the distance to left and right ear
-	private float _commonStaticPart1;// b^2 + c^2 Used to calculate the reference distance to left and right ear (as it was in the CIPIC database at current angle)
-	private float _commonStaticPart2;// 2bc Used to calculate the reference distance to left and right ear (as it was in the CIPIC database at current angle)
-	private float _sos = 344f;//Speed of sound
+	
+	// b^2 + c^2 Used to calculate the distance to left and right ear
+	private float _commonPart1;
+	// 2bc Used to calculate the distance to left and right ear
+	private float _commonPart2;
+	// b^2 + c^2 Used to calculate the reference distance to left and right ear (as it was in the CIPIC database at current angle)
+	private float _commonStaticPart1;
+	// 2bc Used to calculate the reference distance to left and right ear (as it was in the CIPIC database at current angle)
+	private float _commonStaticPart2;
+	// Speed of sound
+	private float _sos = 344f;
 	private float _gainLimit = 5f;
 	
 	public DirectionAndDistanceHandler()
@@ -214,9 +241,11 @@ public class DirectionAndDistanceHandler extends MaxObject
 			return;
 		}
 		
-		//Rotate the _listToSound vector by the _listenerRot quaternion: V = _listenerRot*_listToSound*conjugate(_listenerRot)
-		//Note that it is assumed that the _listenerRot quaternion is normalized and therefore conjugate(_listenerRot) == inverse(_listenerRot)
-		Quat4f toSoundQuat = new Quat4f(new float[]{_listToSound.x,_listToSound.y,_listToSound.z,0});//the vector represented as a quaternion
+		// Rotate the _listToSound vector by the _listenerRot quaternion: V = _listenerRot*_listToSound*conjugate(_listenerRot)
+		// Note that it is assumed that the _listenerRot quaternion is normalized and therefore
+		// conjugate(_listenerRot) == inverse(_listenerRot)
+		// the vector represented as a quaternion
+		Quat4f toSoundQuat = new Quat4f(new float[]{_listToSound.x,_listToSound.y,_listToSound.z,0});
 		Quat4f rotVect = new Quat4f(new float[]{_listenerRot.x,_listenerRot.y,_listenerRot.z,_listenerRot.w});
 		Quat4f conjQuat = new Quat4f();
 		conjQuat.conjugate(_listenerRot);
@@ -249,8 +278,10 @@ public class DirectionAndDistanceHandler extends MaxObject
 		float cosR = (float)Math.cos(angleR);
 		float distL = (float)Math.sqrt(_commonPart1 - _commonPart2 * cosL);
 		float distR = (float)Math.sqrt(_commonPart1 - _commonPart2 * cosR);
-		float cipicDistL = (float)Math.sqrt(_commonStaticPart1 - _commonStaticPart2 * cosL);//The distance to the left ear in the cipic database at this angle
-		float cipicDistR = (float)Math.sqrt(_commonStaticPart1 - _commonStaticPart2 * cosR);//The distance to the right ear in the cipic database at this angle
+		//The distance to the left ear in the cipic database at this angle
+		float cipicDistL = (float)Math.sqrt(_commonStaticPart1 - _commonStaticPart2 * cosL);
+		//The distance to the right ear in the cipic database at this angle
+		float cipicDistR = (float)Math.sqrt(_commonStaticPart1 - _commonStaticPart2 * cosR);
 		float gainL = cipicDistL/distL;
 		float gainR = cipicDistR/distR;
 		

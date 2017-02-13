@@ -32,7 +32,7 @@ import com.cycling74.jitter.*;
  * the Head Related Impulse Responses have been converted to the frequency domain with a fft size of 2048 (the pfft~ subpatches
  * operate on half fft size) and that they are based on 44100 samps/sec recordings.
  * 
- * TODO: sensor-based head tracking, room simulation.
+ * TODO: sensor-based head tracking.
  * 
  */
 
