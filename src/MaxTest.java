@@ -36,6 +36,7 @@ import com.cycling74.jitter.*;
  * 
  */
 
+
 public class MaxTest extends MaxObject { // or MSPPerformer
 	
 	//AudioFileBuffer leftaz0 = null;
