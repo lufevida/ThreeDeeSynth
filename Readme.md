@@ -10,11 +10,9 @@ This is the main repository for *3D Synth*, a software synthesizer that is capab
 
 *3D Synth* utilizes portions of [FFT-based binaural panner v3](http://jakobhandersen.dk/projects/fft-based-binaural-panner/download/) by Jakob Hougaard Andersen at the Aarhus University. His project is in turn based on [Head in Space] (http://sites.google.com/site/dariopizzamiglio/projects/head-in-space) by Dario Pizzamiglio. Head-related impulse responses are taken from [The CIPIC HRTF Database](http://interface.cipic.ucdavis.edu/sound/hrtf.html).
 
-## User Survey
+## Feature Survey
 
-Please help make this project great by filling out the form below:
-
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScI6zff6ttwUFuK46k8fdc5dn21utY8sdTNbta4TowbXjYKHw/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+Please help make this project great by filling out our [Feature Survey](https://goo.gl/forms/VDBTiT0iF7bfDHrj2).
 
 ## Target Population
 
