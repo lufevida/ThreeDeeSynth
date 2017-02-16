@@ -5,5 +5,6 @@
 	<classpathentry kind="lib" path="lib/jitter.jar"/>
 	<classpathentry kind="lib" path="lib/jode-1.1.2-pre-embedded.jar"/>
 	<classpathentry kind="lib" path="lib/max.jar"/>
+	<classpathentry kind="lib" path="lib/vecmath.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
