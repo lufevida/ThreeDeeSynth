@@ -2,8 +2,6 @@
 
 ![Screenshot](https://raw.githubusercontent.com/lufevida/ThreeDeeSynth/master/max/3D%20Synth.png)
 
-
-
 This is the main repository for *3D Synth*, a software synthesizer that is capable positioning its sounds in a 3D space. *3D Synth* is being created by Luis F. Vieira Damiani, James Safko, and Gordon Pierce.
 
 [Click here for a video presentation of the project!](https://youtu.be/Cb7Vyj2r13E?list=FLx8viq1dhbrLlmMVLbDTQyw)
@@ -11,6 +9,10 @@ This is the main repository for *3D Synth*, a software synthesizer that is capab
 ## Acknowledgements
 
 *3D Synth* utilizes portions of [FFT-based binaural panner v3](http://jakobhandersen.dk/projects/fft-based-binaural-panner/download/) by Jakob Hougaard Andersen at the Aarhus University. His project is in turn based on [Head in Space] (http://sites.google.com/site/dariopizzamiglio/projects/head-in-space) by Dario Pizzamiglio. Head-related impulse responses are taken from [The CIPIC HRTF Database](http://interface.cipic.ucdavis.edu/sound/hrtf.html).
+
+## Feature Survey
+
+Please help make this project great by filling out our [Feature Survey](https://goo.gl/forms/VDBTiT0iF7bfDHrj2).
 
 ## Target Population
 
