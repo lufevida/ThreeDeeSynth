@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 1,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 1372.0, 783.0 ],
+		"rect" : [ 62.0, 78.0, 1195.0, 600.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,69 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-157",
+					"maxclass" : "scope~",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1060.0, 1293.0, 130.0, 130.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-154",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1248.0, 465.0, 207.0, 74.0 ],
+					"style" : "",
+					"text" : "TO DO: Real time create from HRIR in .mat the frequency domain of every subject and put in .jxf.\nReduce the number of points (less elevation)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-151",
+					"linecount" : 9,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1248.0, 550.0, 242.0, 127.0 ],
+					"style" : "",
+					"text" : "Azimuth: 73 measurements from linear interpolation from 25\n\nElevation: 128 from 50, (now full 360)\n\n2049: 1 is ITD, 2048 (half is real, half is imaginary of fourier transform of impulse, so resolution is 1024 points in frequency domain)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-136",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 950.0, 1198.0, 150.0, 33.0 ],
+					"style" : "",
+					"text" : "Fix routing between A & E and Direciton & Distance"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-129",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 609.0, 945.0, 238.0, 47.0 ],
+					"style" : "",
+					"text" : "Takes in either azimuth/elevation or calculated values from DirectionAndDIstanceHandler"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-141",
 					"maxclass" : "message",
@@ -709,7 +772,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 1,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -1399,8 +1462,8 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 525.0, 15.0, 330.0, 330.0 ],
 					"style" : "",
-					"xplace" : [ 0.560606, 0.245455 ],
-					"yplace" : [ 0.678788, 0.193939 ]
+					"xplace" : [ 0.251515, 0.245455 ],
+					"yplace" : [ 0.448485, 0.193939 ]
 				}
 
 			}
@@ -1630,7 +1693,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 1,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -1699,7 +1762,7 @@
 										"followglobaltempo" : 0,
 										"formantcorrection" : 0,
 										"mode" : "basic",
-										"originallength" : [ 9099.319336, "ticks" ],
+										"originallength" : [ 9099.319121, "ticks" ],
 										"originaltempo" : 119.999992,
 										"pitchcorrection" : 0,
 										"quality" : "basic",
@@ -1958,7 +2021,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 1,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -2209,7 +2272,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 1,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -3223,7 +3286,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-8",
-					"items" : [ "Mobile Keys 49", ",", "to Max 1", ",", "to Max 2" ],
+					"items" : [ "to Max 1", ",", "to Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -3438,6 +3501,7 @@
 					"destination" : [ "obj-89", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 609.5, 910.5, 819.5, 910.5 ],
 					"source" : [ "obj-101", 0 ]
 				}
 
@@ -3555,6 +3619,7 @@
 					"destination" : [ "obj-89", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 909.5, 910.5, 909.5, 910.5 ],
 					"source" : [ "obj-149", 0 ]
 				}
 
@@ -3564,6 +3629,7 @@
 					"destination" : [ "obj-89", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 804.5, 910.5, 864.5, 910.5 ],
 					"source" : [ "obj-150", 0 ]
 				}
 
@@ -3574,6 +3640,24 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-157", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-2", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-157", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -3816,6 +3900,7 @@
 					"destination" : [ "obj-59", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 1044.5, 1068.0, 941.5, 1068.0 ],
 					"source" : [ "obj-47", 0 ]
 				}
 
@@ -3852,6 +3937,7 @@
 					"destination" : [ "obj-77", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 984.5, 1068.0, 896.5, 1068.0 ],
 					"source" : [ "obj-50", 0 ]
 				}
 
@@ -3888,6 +3974,7 @@
 					"destination" : [ "obj-85", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 1104.5, 1120.5, 1108.5, 1120.5 ],
 					"source" : [ "obj-58", 0 ]
 				}
 
@@ -3897,6 +3984,7 @@
 					"destination" : [ "obj-88", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 1104.5, 1120.5, 943.5, 1120.5 ],
 					"source" : [ "obj-58", 0 ]
 				}
 
@@ -3906,6 +3994,7 @@
 					"destination" : [ "obj-85", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 924.5, 1120.5, 1044.5, 1120.5 ],
 					"source" : [ "obj-59", 0 ]
 				}
 
@@ -4014,6 +4103,7 @@
 					"destination" : [ "obj-88", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 879.5, 1120.5, 879.5, 1120.5 ],
 					"source" : [ "obj-77", 0 ]
 				}
 
@@ -4059,6 +4149,7 @@
 					"destination" : [ "obj-2", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 1044.5, 1173.0, 908.5, 1173.0 ],
 					"source" : [ "obj-85", 0 ]
 				}
 
@@ -4086,6 +4177,7 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 879.5, 1173.0, 879.5, 1173.0 ],
 					"source" : [ "obj-88", 0 ]
 				}
 
@@ -4095,6 +4187,7 @@
 					"destination" : [ "obj-59", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 909.5, 1023.0, 924.5, 1023.0 ],
 					"source" : [ "obj-89", 1 ]
 				}
 
@@ -4104,6 +4197,7 @@
 					"destination" : [ "obj-77", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 819.5, 1023.0, 879.5, 1023.0 ],
 					"source" : [ "obj-89", 0 ]
 				}
 
@@ -4131,6 +4225,7 @@
 					"destination" : [ "obj-123", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 1115.0, 910.5, 1044.5, 910.5 ],
 					"source" : [ "obj-91", 2 ]
 				}
 
@@ -4140,6 +4235,7 @@
 					"destination" : [ "obj-126", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 1157.75, 910.5, 1104.5, 910.5 ],
 					"source" : [ "obj-91", 3 ]
 				}
 
@@ -4149,6 +4245,7 @@
 					"destination" : [ "obj-23", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 1072.25, 910.5, 984.5, 910.5 ],
 					"source" : [ "obj-91", 1 ]
 				}
 
@@ -4158,6 +4255,7 @@
 					"destination" : [ "obj-89", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 1029.5, 910.5, 864.5, 910.5 ],
 					"source" : [ "obj-91", 0 ]
 				}
 
@@ -4185,6 +4283,7 @@
 					"destination" : [ "obj-89", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 699.5, 910.5, 819.5, 910.5 ],
 					"source" : [ "obj-97", 0 ]
 				}
 
