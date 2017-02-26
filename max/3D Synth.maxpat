@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 1372.0, 783.0 ],
+		"rect" : [ 34.0, 79.0, 989.0, 783.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,12 +38,67 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-165",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 570.0, 1140.0, 150.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-163",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 645.0, 1005.0, 55.0, 22.0 ],
+					"style" : "",
+					"text" : "showMe"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-161",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 570.0, 975.0, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-136",
+					"maxclass" : "newobj",
+					"numinlets" : 4,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 570.0, 1050.0, 73.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"filename" : "bufferInfo.js",
+						"parameter_enable" : 0
+					}
+,
+					"style" : "",
+					"text" : "js bufferInfo"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-141",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 660.0, 1140.0, 87.0, 22.0 ],
+					"patching_rect" : [ 525.0, 1260.0, 87.0, 22.0 ],
 					"style" : "",
 					"text" : "presentation 1"
 				}
@@ -56,7 +111,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 405.0, 1185.0, 69.0, 22.0 ],
+					"patching_rect" : [ 270.0, 1305.0, 69.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"style" : "",
 					"text" : "thispatcher"
@@ -70,7 +125,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 405.0, 1095.0, 60.0, 22.0 ],
+					"patching_rect" : [ 270.0, 1215.0, 60.0, 22.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -85,7 +140,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 405.0, 1140.0, 243.0, 21.0 ],
+					"patching_rect" : [ 270.0, 1260.0, 243.0, 21.0 ],
 					"style" : "",
 					"text" : "window size 100 100 1225 700, window exec"
 				}
@@ -1399,8 +1454,8 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 525.0, 15.0, 330.0, 330.0 ],
 					"style" : "",
-					"xplace" : [ 0.560606, 0.245455 ],
-					"yplace" : [ 0.678788, 0.193939 ]
+					"xplace" : [ 0.448485, 0.166667 ],
+					"yplace" : [ 0.542424, 0.378788 ]
 				}
 
 			}
@@ -1563,7 +1618,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 810.0, 945.0, 109.0, 22.0 ],
+					"patching_rect" : [ 810.0, 945.0, 48.0, 22.0 ],
 					"style" : "",
 					"text" : "panner"
 				}
@@ -3223,7 +3278,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-8",
-					"items" : [ "Mobile Keys 49", ",", "to Max 1", ",", "to Max 2" ],
+					"items" : [ "to Max 1", ",", "to Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -3543,6 +3598,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-165", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-136", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-122", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -3565,6 +3629,24 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-150", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-136", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-161", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-136", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-163", 0 ]
 				}
 
 			}
@@ -4225,6 +4307,12 @@
 				"name" : "pfftRight.maxpat",
 				"bootpath" : "~/Documents/workspace/ThreeDeeSynth/max",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "bufferInfo.js",
+				"bootpath" : "~/Documents/workspace/ThreeDeeSynth/max",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
  ],

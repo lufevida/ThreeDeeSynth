@@ -1,6 +1,5 @@
 import javax.vecmath.Quat4f;
 import javax.vecmath.Vector3f;
-
 import com.cycling74.max.Atom;
 import com.cycling74.max.DataTypes;
 import com.cycling74.max.MaxObject;
