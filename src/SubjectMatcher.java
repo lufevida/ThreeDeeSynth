@@ -40,47 +40,19 @@ public class SubjectMatcher {
 		SUBJECT156(1.553074f, 0.565307f, 1.529336f, 0.974287f, 5.424315f, 2.718003f, 0.507146f, 0.918064f, 0.387943f, 0.49541f),
 		SUBJECT162(2.170212f, 0.977844f, 1.707666f, 1.936045f, 7.907155f, 3.144018f, 0.910621f, 1.242739f, 0.287555f, 0.401443f),
 		SUBJECT163(1.638214f, 0.735302f, 1.642919f, 1.728571f, 6.24204f, 2.94049f, 0.598031f, 1.005684f, 0.353903f, 0.465055f),
-		SUBJECT165(2.215958f, 0.522088f, 1.530685f, 1.369658f, 5.677949f, 2.603121f, 0.786054f, 0.871232f, 0.213044f, 0.509466f),
-		NEW(0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f);
+		SUBJECT165(2.215958f, 0.522088f, 1.530685f, 1.369658f, 5.677949f, 2.603121f, 0.786054f, 0.871232f, 0.213044f, 0.509466f);
 		
 		// Arguments
-		private float cavumConchaHeight;
-		private float cymbaConchaHeight;
-		private float cavumConchaWidth;
-		private float fossaHeight;
-		private float pinnaHeight;
-		private float pinnaWidth;
-		private float intertragalIncisureWidth;
-		private float cavumConchaDepth;
-		private float pinnaRotationAngle;
-		private float pinnaFlareAngle;
-		
-		private String name = "New Subject";
-		
-		public void setValues(
-				String name,
-				float cavumConchaHeight,
-				float cymbaConchaHeight,
-				float cavumConchaWidth,
-				float fossaHeight,
-				float pinnaHeight,
-				float pinnaWidth,
-				float intertragalIncisureWidth,
-				float cavumConchaDepth,
-				float pinnaRotationAngle,
-				float pinnaFlareAngle) {
-			this.name = name;
-			this.cavumConchaHeight = cavumConchaHeight;
-			this.cymbaConchaHeight = cymbaConchaHeight;
-			this.cavumConchaWidth = cavumConchaWidth;
-			this.fossaHeight = fossaHeight;
-			this.pinnaHeight = pinnaHeight;
-			this.pinnaWidth = pinnaWidth;
-			this.intertragalIncisureWidth = intertragalIncisureWidth;
-			this.cavumConchaDepth = cavumConchaDepth;
-			this.pinnaRotationAngle = pinnaRotationAngle;
-			this.pinnaFlareAngle = pinnaFlareAngle;
-		}
+		private final float cavumConchaHeight;
+		private final float cymbaConchaHeight;
+		private final float cavumConchaWidth;
+		private final float fossaHeight;
+		private final float pinnaHeight;
+		private final float pinnaWidth;
+		private final float intertragalIncisureWidth;
+		private final float cavumConchaDepth;
+		private final float pinnaRotationAngle;
+		private final float pinnaFlareAngle;
 		
 		// Constructor for the enumeration type
 		Measurements(
@@ -94,29 +66,44 @@ public class SubjectMatcher {
 				float cavumConchaDepth,
 				float pinnaRotationAngle,
 				float pinnaFlareAngle) {
-			this.setValues(
-					this.name().charAt(0) + name().substring(1).toLowerCase(),
-					cavumConchaHeight,
-					cymbaConchaHeight,
-					cavumConchaWidth,
-					fossaHeight,
-					pinnaHeight,
-					pinnaWidth,
-					intertragalIncisureWidth,
-					cavumConchaDepth,
-					pinnaRotationAngle,
-					pinnaFlareAngle);
+			this.cavumConchaHeight = cavumConchaHeight;
+			this.cymbaConchaHeight = cymbaConchaHeight;
+			this.cavumConchaWidth = cavumConchaWidth;
+			this.fossaHeight = fossaHeight;
+			this.pinnaHeight = pinnaHeight;
+			this.pinnaWidth = pinnaWidth;
+			this.intertragalIncisureWidth = intertragalIncisureWidth;
+			this.cavumConchaDepth = cavumConchaDepth;
+			this.pinnaRotationAngle = pinnaRotationAngle;
+			this.pinnaFlareAngle = pinnaFlareAngle;
+		}
+		
+		public float[] toArray() {
+			float[] returnArray = {
+					this.cavumConchaHeight,
+					this.cymbaConchaHeight,
+					this.cavumConchaWidth,
+					this.fossaHeight,
+					this.pinnaHeight,
+					this.pinnaWidth,
+					this.intertragalIncisureWidth,
+					this.cavumConchaDepth,
+					this.pinnaRotationAngle,
+					this.pinnaFlareAngle
+			};
+			return returnArray;
 		}
 		
 		@Override public String toString() {
-			return this.name;
+			return this.name().charAt(0) + name().substring(1).toLowerCase();
 	    }
 		
 	}
 	
 	public class Subject {
 		
-		private final Measurements measurements;
+		private final String name;
+		private final float[] measurements;
 		// Array containing the standard deviations from the CIPIC database
 		private float[] sigmas = {0.18f, 0.12f, 0.28f, 0.33f, 0.51f, 0.27f, 0.14f, 0.16f, 6.59f, 6.7f};
 		
@@ -124,7 +111,6 @@ public class SubjectMatcher {
 		 * Subtracts each measurement from the average subjects'.
 		 */
 		private float[] subtractFromMean() {
-			float[] measurements = this.getMeasurements();
 			float[] averages = {1.91f, 0.68f, 1.58f, 1.51f, 6.41f, 2.92f, 0.53f, 1.02f, 24.01f, 28.53f};
 			float[] returnArray = new float[measurements.length];
 			for (int index = 0; index < measurements.length; index++) {
@@ -162,11 +148,10 @@ public class SubjectMatcher {
 		 */
 		public float compareWithSubject(Subject subject, boolean weighted) {
 			float returnValue = 0.0f;
-			float[] ourSubject = this.getMeasurements();
-			float[] subjectToCompare = subject.getMeasurements();
+			float[] subjectToCompare = subject.measurements;
 			if(!weighted) {
 				for (int index = 0; index < subjectToCompare.length; index++) {
-					float valueToAccumulate = ourSubject[index] - subjectToCompare[index];
+					float valueToAccumulate = measurements[index] - subjectToCompare[index];
 					// Get absolute values
 					if (valueToAccumulate < 0) valueToAccumulate *= -1;
 					returnValue += valueToAccumulate;
@@ -176,7 +161,7 @@ public class SubjectMatcher {
 				float[] comparisonWeights = subject.getWeights();
 				for (int index = 0; index < subjectToCompare.length; index++) {
 					// Apply weights
-					float valueToAccumulate = ourSubject[index] * ourWeights[index];
+					float valueToAccumulate = measurements[index] * ourWeights[index];
 					valueToAccumulate -= subjectToCompare[index] * comparisonWeights[index];
 					// Get absolute values
 					if (valueToAccumulate < 0) valueToAccumulate *= -1;
@@ -187,23 +172,15 @@ public class SubjectMatcher {
 			return returnValue;
 		}
 		
-		public float[] getMeasurements() {
-			float[] array = {
-					this.measurements.cavumConchaHeight,
-					this.measurements.cymbaConchaHeight,
-					this.measurements.cavumConchaWidth,
-					this.measurements.fossaHeight,
-					this.measurements.pinnaHeight,
-					this.measurements.pinnaWidth,
-					this.measurements.intertragalIncisureWidth,
-					this.measurements.cavumConchaDepth,
-					this.measurements.pinnaRotationAngle,
-					this.measurements.pinnaFlareAngle};
-			return array;
+		Subject(String name, float[] measurements) {
+			this.name = name;
+			this.measurements = measurements;
 		}
 		
+		// overload to accept an enum type
 		Subject(Measurements measurements) {
-			this.measurements = measurements;
+			this.name = measurements.toString();
+			this.measurements = measurements.toArray();
 		}
 		
 	}
@@ -212,7 +189,7 @@ public class SubjectMatcher {
 		
 		float currentScore;
 		float bestScore = 100;
-		String ourName = subject.measurements.toString();
+		String ourName = subject.name;
 		String matchName = "";
 		String returnString = "";
 		
@@ -227,7 +204,7 @@ public class SubjectMatcher {
 			currentScore = subject.compareWithSubject(comparisonSubject, weighted);
 			if (currentScore != 0.0f && currentScore < bestScore) {
 				bestScore = currentScore;
-				matchName = comparisonSubject.measurements.toString();
+				matchName = comparisonSubject.name;
 			}
 		}
 		
@@ -241,20 +218,21 @@ public class SubjectMatcher {
 	public static void main(String[] args) {
 		
 		SubjectMatcher matcher = new SubjectMatcher();
+		String result = "";
 		
-		Subject subject = matcher.new Subject(Measurements.NEW);
-		subject.measurements.setValues("Luis", 2.0f, 0.6f, 1.75f, 2.1f, 7.0f, 4.05f, 0.55f, 1.42f, 22.4f, 29.7f);
-		String result = matcher.getBestMatch(subject, false);
+		float[] arrayLuis = {2.0f, 0.6f, 1.75f, 2.1f, 7.0f, 4.05f, 0.55f, 1.42f, 22.4f, 29.7f};
+		Subject luis = matcher.new Subject("Luis", arrayLuis);
+		result = matcher.getBestMatch(luis, false);
 		System.out.println(result);
 		
-		subject = matcher.new Subject(Measurements.NEW);
-		subject.measurements.setValues("Gordon", 1.55f, 0.5f, 1.05f, 2.2f, 6.05f, 3.0f, 0.45f, 0.89f, 24.5f, 28.3f);
-		result = matcher.getBestMatch(subject, false);
+		float[] arrayGordon = {1.55f, 0.5f, 1.05f, 2.2f, 6.05f, 3.0f, 0.45f, 0.89f, 24.5f, 28.3f};
+		Subject gordon = matcher.new Subject("Gordon", arrayGordon);
+		result = matcher.getBestMatch(gordon, false);
 		System.out.println(result);
 		
-		subject = matcher.new Subject(Measurements.NEW);
-		subject.measurements.setValues("James", 1.75f, 0.72f, 1.3f, 1.7f, 6.0f, 2.8f, 0.45f, 0.97f, 25.0f, 27.8f);
-		result = matcher.getBestMatch(subject, false);
+		float[] arrayJames = {1.75f, 0.72f, 1.3f, 1.7f, 6.0f, 2.8f, 0.45f, 0.97f, 25.0f, 27.8f};
+		Subject james = matcher.new Subject("James", arrayJames);
+		result = matcher.getBestMatch(james, false);
 		System.out.println(result);
 		
 	}
