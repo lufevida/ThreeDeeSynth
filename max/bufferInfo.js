@@ -7,9 +7,7 @@
 // post(String) // prints to the console
 // outlet(#, value) // outputs through specified outlet
 
-inlets = 4;
-
-outlets = 3;
+outlets = 4
 
 var buf = new Buffer("vega")
 
@@ -21,21 +19,10 @@ function bang() {
 	
 	var i = 0;
 	
-	for (i = 0; i < 20; i++) {
+	for (i = 0; i < buf.length(); i++) {
 		
 		post(buf.peek(1, i).toString() + "\n");
 		
 	}
-	
-}
-	
-	
-function showMe() {
-	
-	var array = [0, 1, 2, 3];
-	
-	
-	
-	outlet(0, "Hi, James.");
 	
 }
