@@ -36,7 +36,6 @@ import com.cycling74.jitter.*;
  * 
  */
 
-
 public class MaxTest extends MaxObject { // or MSPPerformer
 	
 	//AudioFileBuffer leftaz0 = null;
@@ -81,7 +80,6 @@ public class MaxTest extends MaxObject { // or MSPPerformer
 		audioBufferRight = MSPBuffer.peek("vega", 2);
 		
 		/*
-		 * TODO Find out how this works!
 		String fileName = MaxSystem.locateFile("vega.wav");
 		try {
 			leftaz0.open("vega.wav");
