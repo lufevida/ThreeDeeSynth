@@ -1,3 +1,6 @@
+// Have Max listen
+autowatch = 1
+
 // Define a type containing all measurements
 var Measurements = {
 		SUBJECT3: {
@@ -446,6 +449,22 @@ var Measurements = {
 			}
 }
 
+// Convenience method to output type as an array
+function exportArray(array) {
+	return [
+		array.cavumConchaHeight,
+		array.cymbaConchaHeight,
+		array.cavumConchaWidth,
+		array.fossaHeight,
+		array.pinnaHeight,
+		array.pinnaWidth,
+		array.intertragalIncisureWidth,
+		array.cavumConchaDepth,
+		array.pinnaRotationAngle,
+		array.pinnaFlareAngle
+		]
+}
+
 // Array containing all averages from the CIPIC database
 var averages = {
 		cavumConchaHeight: 1.91,
@@ -474,16 +493,105 @@ var sigmas = {
 		pinnaFlareAngle: 6.7
 }
 
-// Subtract each measurement from the average subjects'.
-
+/*
+ * Subtract each measurement from the average subjects'
+ */
 function subtractFromMean(measurements) {
-	var returnArray = [];
-	for (index = 0; index < this.averages.length; index++) {
-		returnArray[index] = this.averages[index] - measurements[index];
+	var returnArray = []
+	var means = exportArray(averages)
+	for (index = 0; index < measurements.length; index++) {
+		returnArray[index] = means[index] - measurements[index];
 	}
 	return returnArray;
 }
 
+/*
+ * Weights range from one to three and are computed based on the number
+ * of standard deviations each measurement strays from the mean
+ */
+function getWeights(measurements) {
+	var returnArray = []
+	var deviations = exportArray(sigmas)
+	var distancesFromMean = subtractFromMean(measurements)
+	for (index = 0; index < measurements.length; index++) {
+		// Get absolute values
+		if (distancesFromMean[index] < 0) distancesFromMean[index] *= -1
+		// Compare to standard deviations
+		if (distancesFromMean[index] <= deviations[index]) {
+			returnArray[index] = 1.0
+		} else if (distancesFromMean[index] <= deviations[index] * 2.0) {
+			returnArray[index] = 2.0
+		} else {
+			returnArray[index] = 3.0
+		}
+	}
+	return returnArray
+}
+
+/*
+ * Returns the score of a comparison with another subject by taking the
+ * Manhattan, or L_1 distance between the vectors. When the `weights` property
+ * is on, the method returns a weighted version of the L_1 distance.
+ */
+function compareWithSubject(subject, subjectToCompare, weighted) {
+	var returnValue = 0.0
+	if(!weighted) {
+		for (index = 0; index < subjectToCompare.length; index++) {
+			var valueToAccumulate = subject[index] - subjectToCompare[index]
+			// Get absolute values
+			if (valueToAccumulate < 0) valueToAccumulate *= -1
+			returnValue += valueToAccumulate
+		}
+	} else {
+		var ourWeights = getWeights(subject)
+		var comparisonWeights = getWeights(subjectToCompare)
+		for (index = 0; index < subjectToCompare.length; index++) {
+			// Apply weights
+			var valueToAccumulate = subject[index] * ourWeights[index]
+			valueToAccumulate -= subjectToCompare[index] * comparisonWeights[index]
+			// Get absolute values
+			if (valueToAccumulate < 0) valueToAccumulate *= -1
+			returnValue += valueToAccumulate
+		}
+		
+	}
+	return returnValue
+}
+
+// Get the best match from the CIPIC database
+function getBestMatch(subject, weighted) {
+	var bestScore = 100.0
+	var matchName = ""
+	var returnString = ""
+	var allMeasurements = Object.keys(Measurements)
+	var allSubjects = []
+	for (firstIndex = 0; firstIndex < allMeasurements.length; firstIndex++) {
+		var measurement = allMeasurements[firstIndex]
+		allSubjects[firstIndex] = exportArray(Measurements[measurement])
+	}
+	for (secondIndex = 0; secondIndex < allSubjects.length; secondIndex++) {
+		var score = compareWithSubject(subject, allSubjects[secondIndex], weighted)
+		if (score < bestScore) {
+			bestScore = score
+			matchName = allMeasurements[secondIndex]
+		}
+	}	
+	return matchName
+}
+
 function bang() {
-	subtractFromMean([0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+	var luis = [2.0, 0.6, 1.75, 2.1, 7.0, 4.05, 0.55, 1.42, 22.4, 29.7]
+	var gordon = [1.55, 0.5, 1.05, 2.2, 6.05, 3.0, 0.45, 0.89, 24.5, 28.3]
+	var james = [1.75, 0.72, 1.3, 1.7, 6.0, 2.8, 0.45, 0.97, 25.0, 27.8]
+	post(getBestMatch(luis, false))
+	post(getBestMatch(gordon, false))
+	post(getBestMatch(james, false))
+}
+
+function simple() {
+	outlet(0, String(getBestMatch(arguments, false)))
+}
+
+function weighted() {
+	outlet(0, getBestMatch(arguments, true))
 }
