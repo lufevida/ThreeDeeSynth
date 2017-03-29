@@ -1,7 +1,7 @@
 // Have Max listen
 autowatch = 1
 
-// Define a type containing all measurements
+// Define an object containing all measurements
 var Measurements = {
 		SUBJECT3: {
 			cavumConchaHeight: 1.941107,
@@ -449,23 +449,7 @@ var Measurements = {
 			}
 }
 
-// Convenience method to output type as an array
-function exportArray(array) {
-	return [
-		array.cavumConchaHeight,
-		array.cymbaConchaHeight,
-		array.cavumConchaWidth,
-		array.fossaHeight,
-		array.pinnaHeight,
-		array.pinnaWidth,
-		array.intertragalIncisureWidth,
-		array.cavumConchaDepth,
-		array.pinnaRotationAngle,
-		array.pinnaFlareAngle
-		]
-}
-
-// Array containing all averages from the CIPIC database
+// Object containing all averages from the CIPIC database
 var averages = {
 		cavumConchaHeight: 1.91,
 		cymbaConchaHeight: 0.68,
@@ -479,7 +463,7 @@ var averages = {
 		pinnaFlareAngle: 28.53
 }
 
-// Array containing all standard deviations from the CIPIC database
+// Object containing all standard deviations from the CIPIC database
 var sigmas = {
 		cavumConchaHeight: 0.18,
 		cymbaConchaHeight: 0.12,
@@ -491,6 +475,22 @@ var sigmas = {
 		cavumConchaDepth: 0.16,
 		pinnaRotationAngle: 6.59,
 		pinnaFlareAngle: 6.7
+}
+
+// Convenience method to output object as an array
+function exportArray(array) {
+	return [
+		array.cavumConchaHeight,
+		array.cymbaConchaHeight,
+		array.cavumConchaWidth,
+		array.fossaHeight,
+		array.pinnaHeight,
+		array.pinnaWidth,
+		array.intertragalIncisureWidth,
+		array.cavumConchaDepth,
+		array.pinnaRotationAngle,
+		array.pinnaFlareAngle
+		]
 }
 
 /*
@@ -533,7 +533,7 @@ function getWeights(measurements) {
  * Manhattan, or L_1 distance between the vectors. When the `weights` property
  * is on, the method returns a weighted version of the L_1 distance.
  */
-function compareWithSubject(subject, subjectToCompare, weighted) {
+function compareWithSubject(subject, subjectToCompare) {
 	var returnValue = 0.0
 	if(!weighted) {
 		for (index = 0; index < subjectToCompare.length; index++) {
@@ -559,7 +559,7 @@ function compareWithSubject(subject, subjectToCompare, weighted) {
 }
 
 // Get the best match from the CIPIC database
-function getBestMatch(subject, weighted) {
+function getBestMatch(subject) {
 	var bestScore = 100.0
 	var matchName = ""
 	var returnString = ""
@@ -579,19 +579,30 @@ function getBestMatch(subject, weighted) {
 	return matchName
 }
 
+var weighted = false;
+
+function setweight() {
+	if (arguments[0] == 0) {
+		weighted = false
+	} else {
+		weighted = true
+	}
+	post("\nweighted = " + weighted)
+}
+
+function list() {
+	outlet(0, getBestMatch(arguments))
+}
+
+// Proof of concept
 function bang() {
 	var luis = [2.0, 0.6, 1.75, 2.1, 7.0, 4.05, 0.55, 1.42, 22.4, 29.7]
 	var gordon = [1.55, 0.5, 1.05, 2.2, 6.05, 3.0, 0.45, 0.89, 24.5, 28.3]
 	var james = [1.75, 0.72, 1.3, 1.7, 6.0, 2.8, 0.45, 0.97, 25.0, 27.8]
-	post(getBestMatch(luis, false))
-	post(getBestMatch(gordon, false))
-	post(getBestMatch(james, false))
-}
-
-function simple() {
-	outlet(0, String(getBestMatch(arguments, false)))
-}
-
-function weighted() {
-	outlet(0, getBestMatch(arguments, true))
+	post(getBestMatch(luis))
+	//console.log(getBestMatch(luis))
+	post(getBestMatch(gordon))
+	//console.log(getBestMatch(gordon))
+	post(getBestMatch(james))
+	//console.log(getBestMatch(james))
 }
