@@ -570,7 +570,7 @@ function getBestMatch(subject) {
 		allSubjects[firstIndex] = exportArray(Measurements[measurement])
 	}
 	for (secondIndex = 0; secondIndex < allSubjects.length; secondIndex++) {
-		var score = compareWithSubject(subject, allSubjects[secondIndex], weighted)
+		var score = compareWithSubject(subject, allSubjects[secondIndex])
 		if (score < bestScore) {
 			bestScore = score
 			matchName = allMeasurements[secondIndex]
