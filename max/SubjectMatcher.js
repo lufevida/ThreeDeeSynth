@@ -1,4 +1,7 @@
-// Define a type containing all measurements
+// Have Max listen
+autowatch = 1
+
+// Define an object containing all measurements
 var Measurements = {
 		SUBJECT3: {
 			cavumConchaHeight: 1.941107,
@@ -446,7 +449,7 @@ var Measurements = {
 			}
 }
 
-// Array containing all averages from the CIPIC database
+// Object containing all averages from the CIPIC database
 var averages = {
 		cavumConchaHeight: 1.91,
 		cymbaConchaHeight: 0.68,
@@ -460,7 +463,7 @@ var averages = {
 		pinnaFlareAngle: 28.53
 }
 
-// Array containing all standard deviations from the CIPIC database
+// Object containing all standard deviations from the CIPIC database
 var sigmas = {
 		cavumConchaHeight: 0.18,
 		cymbaConchaHeight: 0.12,
@@ -474,16 +477,132 @@ var sigmas = {
 		pinnaFlareAngle: 6.7
 }
 
-// Subtract each measurement from the average subjects'.
+// Convenience method to output object as an array
+function exportArray(array) {
+	return [
+		array.cavumConchaHeight,
+		array.cymbaConchaHeight,
+		array.cavumConchaWidth,
+		array.fossaHeight,
+		array.pinnaHeight,
+		array.pinnaWidth,
+		array.intertragalIncisureWidth,
+		array.cavumConchaDepth,
+		array.pinnaRotationAngle,
+		array.pinnaFlareAngle
+		]
+}
 
+/*
+ * Subtract each measurement from the average subjects'
+ */
 function subtractFromMean(measurements) {
-	var returnArray = [];
-	for (index = 0; index < this.averages.length; index++) {
-		returnArray[index] = this.averages[index] - measurements[index];
+	var returnArray = []
+	var means = exportArray(averages)
+	for (index = 0; index < measurements.length; index++) {
+		returnArray[index] = means[index] - measurements[index];
 	}
 	return returnArray;
 }
 
+/*
+ * Weights range from one to three and are computed based on the number
+ * of standard deviations each measurement strays from the mean
+ */
+function getWeights(measurements) {
+	var returnArray = []
+	var deviations = exportArray(sigmas)
+	var distancesFromMean = subtractFromMean(measurements)
+	for (index = 0; index < measurements.length; index++) {
+		// Get absolute values
+		if (distancesFromMean[index] < 0) distancesFromMean[index] *= -1
+		// Compare to standard deviations
+		if (distancesFromMean[index] <= deviations[index]) {
+			returnArray[index] = 1.0
+		} else if (distancesFromMean[index] <= deviations[index] * 2.0) {
+			returnArray[index] = 2.0
+		} else {
+			returnArray[index] = 3.0
+		}
+	}
+	return returnArray
+}
+
+/*
+ * Returns the score of a comparison with another subject by taking the
+ * Manhattan, or L_1 distance between the vectors. When the `weights` property
+ * is on, the method returns a weighted version of the L_1 distance.
+ */
+function compareWithSubject(subject, subjectToCompare) {
+	var returnValue = 0.0
+	if(!weighted) {
+		for (index = 0; index < subjectToCompare.length; index++) {
+			var valueToAccumulate = subject[index] - subjectToCompare[index]
+			// Get absolute values
+			if (valueToAccumulate < 0) valueToAccumulate *= -1
+			returnValue += valueToAccumulate
+		}
+	} else {
+		var ourWeights = getWeights(subject)
+		var comparisonWeights = getWeights(subjectToCompare)
+		for (index = 0; index < subjectToCompare.length; index++) {
+			// Apply weights
+			var valueToAccumulate = subject[index] * ourWeights[index]
+			valueToAccumulate -= subjectToCompare[index] * comparisonWeights[index]
+			// Get absolute values
+			if (valueToAccumulate < 0) valueToAccumulate *= -1
+			returnValue += valueToAccumulate
+		}
+		
+	}
+	return returnValue
+}
+
+// Get the best match from the CIPIC database
+function getBestMatch(subject) {
+	var bestScore = 100.0
+	var matchName = ""
+	var returnString = ""
+	var allMeasurements = Object.keys(Measurements)
+	var allSubjects = []
+	for (firstIndex = 0; firstIndex < allMeasurements.length; firstIndex++) {
+		var measurement = allMeasurements[firstIndex]
+		allSubjects[firstIndex] = exportArray(Measurements[measurement])
+	}
+	for (secondIndex = 0; secondIndex < allSubjects.length; secondIndex++) {
+		var score = compareWithSubject(subject, allSubjects[secondIndex])
+		if (score < bestScore) {
+			bestScore = score
+			matchName = allMeasurements[secondIndex]
+		}
+	}	
+	return matchName
+}
+
+var weighted = false;
+
+function setweight() {
+	if (arguments[0] == 0) {
+		weighted = false
+	} else {
+		weighted = true
+	}
+	post("\nweighted = " + weighted)
+}
+
+function list() {
+	outlet(0, getBestMatch(arguments))
+}
+
+// Proof of concept
 function bang() {
-	subtractFromMean([0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+	var luis = [2.0, 0.6, 1.75, 2.1, 7.0, 4.05, 0.55, 1.42, 22.4, 29.7]
+	var gordon = [1.55, 0.5, 1.05, 2.2, 6.05, 3.0, 0.45, 0.89, 24.5, 28.3]
+	var james = [1.75, 0.72, 1.3, 1.7, 6.0, 2.8, 0.45, 0.97, 25.0, 27.8]
+	post(getBestMatch(luis))
+	//console.log(getBestMatch(luis))
+	post(getBestMatch(gordon))
+	//console.log(getBestMatch(gordon))
+	post(getBestMatch(james))
+	//console.log(getBestMatch(james))
 }
