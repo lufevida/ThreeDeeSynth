@@ -28,6 +28,7 @@ import com.cycling74.max.MaxObject;
  */
 
 public class DirectionAndDistanceHandler extends MaxObject {
+	
 	private Quat4f _listenerRot = new Quat4f(0,0,0,1);
 	private Vector3f _listenerPos = new Vector3f();
 	private Vector3f _soundPos = new Vector3f();
@@ -225,7 +226,7 @@ public class DirectionAndDistanceHandler extends MaxObject {
 		}
 		//Calculate the common part in the cosine relations used to define the distance to both ears (later)
 		_commonPart1 = _headRadius * _headRadius + _relDist * _relDist;
-		_commonPart2 = 2 * _headRadius * _relDist; 
+		_commonPart2 = 2 * _headRadius * _relDist;
 		calcRelRot();
 	}
 	
@@ -250,7 +251,6 @@ public class DirectionAndDistanceHandler extends MaxObject {
 		conjQuat.conjugate(_listenerRot);
 		rotVect.mul(toSoundQuat);
 		rotVect.mul(conjQuat);
-		
 		//Convert the vector to polar coordinates (http://www.engin.brown.edu/courses/en3/Notes/Vector_Web2/Vectors6a/Vectors6a.htm)
 		//Note that the axis must be shifted in order to match the calculation described at the website
 		float x = rotVect.z;
@@ -261,6 +261,7 @@ public class DirectionAndDistanceHandler extends MaxObject {
 		
 		//Set azimuth range to 0 to 72 (0 to 180deg)
 		long azimuth = Math.round(72*(1-azim/Math.PI));
+
 		//set elevation range to 0 to 127 (-45 to 315deg)
 		elev =(float) -(elev - Math.PI*0.75);
 		if (elev < 0)
