@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 598.0, 78.0, 640.0, 480.0 ],
+		"rect" : [ 588.0, 78.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -259,11 +259,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-82",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 342.0, 40.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -273,11 +273,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-84",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 377.0, 40.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -287,11 +287,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-86",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 412.0, 40.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -301,11 +301,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-87",
-					"index" : 5,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 447.0, 40.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -315,11 +315,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-88",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 279.5, 40.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -329,11 +329,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-89",
-					"index" : 6,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 482.0, 40.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -343,11 +343,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-90",
-					"index" : 7,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 515.0, 40.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -803,7 +803,15 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "JamesLFOGuts.maxpat",
+				"bootpath" : "~/Documents/workspace2/ThreeDeeSynth/max",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
