@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 346.0, 158.0, 1060.0, 623.0 ],
+		"rect" : [ 188.0, 78.0, 1060.0, 623.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -61,7 +61,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 794.0, 297.5, 212.0, 87.0 ],
 					"style" : "",
-					"text" : "This multiplier changes the y axis of what you are viewing in this window. So, when you select LFO 2, 2 * -426 is sent to the bpatcher and it displays 2*-426 units down. It takes some fiddling with to find the right number."
+					"text" : "This multiplier changes the y axis of what you are viewing in this window. So, when you select LFO 2, 2 * -426 is sent to the bpatcher and it displays 2*-426 units down. It takes some fiddling with to find the right number. "
 				}
 
 			}
@@ -141,7 +141,7 @@
 					"name" : "LFOShell.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
+					"offset" : [ 0.0, -852.0 ],
 					"patching_rect" : [ 48.0, 52.0, 430.0, 439.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 41.0, 180.0, 422.0, 434.0 ],
