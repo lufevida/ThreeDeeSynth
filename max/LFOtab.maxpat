@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 346.0, 158.0, 524.0, 623.0 ],
+		"rect" : [ 346.0, 158.0, 1060.0, 623.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,14 +38,30 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-6",
-					"linecount" : 3,
+					"id" : "obj-7",
+					"linecount" : 9,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 787.0, 247.5, 156.0, 47.0 ],
+					"patching_rect" : [ 549.0, 10.0, 225.0, 127.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 13,
+					"presentation_rect" : [ 589.0, 225.0, 150.0, 181.0 ],
 					"style" : "",
-					"text" : "changes the y axis of what you are viewing in this window"
+					"text" : "Put this inside the main patch. The idea is to use the device bpatcher to show the insides of a another patch. (which you can change inside the inspector). This bpatcher is showing the insides of LFO shell.\n\nGo inside LFOShell.maxpat to see the next level."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 794.0, 297.5, 212.0, 87.0 ],
+					"style" : "",
+					"text" : "This multiplier changes the y axis of what you are viewing in this window. So, when you select LFO 2, 2 * -426 is sent to the bpatcher and it displays 2*-426 units down. It takes some fiddling with to find the right number."
 				}
 
 			}
@@ -73,7 +89,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 684.0, 247.5, 37.0, 20.0 ],
+					"patching_rect" : [ 676.0, 301.5, 37.0, 20.0 ],
 					"style" : "",
 					"text" : "* -426"
 				}
@@ -125,7 +141,7 @@
 					"name" : "LFOShell.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"offset" : [ 0.0, -852.0 ],
+					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 48.0, 52.0, 430.0, 439.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 41.0, 180.0, 422.0, 434.0 ],
