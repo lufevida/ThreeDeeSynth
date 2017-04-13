@@ -154,6 +154,6 @@ function hamiltonProduct(q1, q2) {
  * If no listener rotation is given, the listener is looking forward which is 'up' here.
  */
 function listenerRot(w, x, y, z) {
-	listenerRotation = [x, y, z, w];
+	listenerRotation = [w, x, y, z];
 	calcRelRot();
 }
