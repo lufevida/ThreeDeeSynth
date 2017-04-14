@@ -6,3 +6,7 @@ bin/.DS_Store
 matlab/.DS_Store
 .settings/.DS_Store
 /bin/
+
+max/3D Synth GordonBroken.maxpat
+
+max/LFOgordon.maxpat

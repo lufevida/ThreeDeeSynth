@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
-			"architecture" : "x64",
+			"revision" : 1,
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 728.0, 78.0, 769.0, 933.0 ],
+		"rect" : [ 34.0, 79.0, 1372.0, 783.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -59,42 +59,6 @@
 					"patching_rect" : [ 554.0, 55.0, 150.0, 33.0 ],
 					"style" : "",
 					"text" : "Here, the display is changed."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-10",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 21.0, 870.0, 150.0, 20.0 ],
-					"style" : "",
-					"text" : "LFO 3"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-7",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 21.0, 443.0, 150.0, 20.0 ],
-					"style" : "",
-					"text" : "LFO 2"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-6",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 21.0, 15.0, 150.0, 20.0 ],
-					"style" : "",
-					"text" : "LFO 1"
 				}
 
 			}
@@ -204,7 +168,6 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-11",
-					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -224,7 +187,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 443.0, 141.0, 64.0, 20.0 ],
-					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 728, 78, 1497, 1011, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 34, 79, 1406, 862, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
 					"style" : "",
 					"text" : "thispatcher"
 				}
@@ -309,25 +272,25 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "LFO.maxpat",
-				"bootpath" : "~/Documents/workspace2/ThreeDeeSynth/max",
+				"bootpath" : "~/Desktop/ThreeDeeSynth/max",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sineCreation.maxpat",
-				"bootpath" : "~/Documents/workspace2/ThreeDeeSynth/max",
+				"bootpath" : "~/Desktop/ThreeDeeSynth/max",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LFORouterBox.maxpat",
-				"bootpath" : "~/Documents/workspace2/ThreeDeeSynth/max",
+				"bootpath" : "~/Desktop/ThreeDeeSynth/max",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LFORouteAndScale.maxpat",
-				"bootpath" : "~/Documents/workspace2/ThreeDeeSynth/max",
+				"bootpath" : "~/Desktop/ThreeDeeSynth/max",
 				"type" : "JSON",
 				"implicit" : 1
 			}

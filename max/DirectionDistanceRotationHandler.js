@@ -18,7 +18,7 @@ var listToSound = [0, 0, 0, 0];
 var relDist = 0;
 var headRadius = 0.11;
 var speedOfSound = 344;
-var gainLimit = 5;
+var gainLimit = 1;
 
 /*
  * Used to calculate the distance to left and right ear
@@ -44,7 +44,7 @@ function gainLimit(gain) {
 
 // Set the world position of the sound source in meters.
 function soundPos(x, y, z) {
-	soundPosition = [x, y, z];
+	soundPosition = [x, y, -z]; //invert the z axis because it's inverted in the phys world
 	newPos();
 }
 
@@ -154,6 +154,6 @@ function hamiltonProduct(q1, q2) {
  * If no listener rotation is given, the listener is looking forward which is 'up' here.
  */
 function listenerRot(w, x, y, z) {
-	listenerRotation = [x, y, z, w];
+	listenerRotation = [w, x, y, z];
 	calcRelRot();
 }
