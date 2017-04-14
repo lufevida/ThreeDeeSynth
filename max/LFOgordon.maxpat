@@ -144,7 +144,11 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 127.0, 275.0, 144.0, 18.0 ],
 					"presentation" : 1,
+<<<<<<< HEAD:max/LFOgordon.maxpat
 					"presentation_rect" : [ 8.0, 33.0, 47.0, 18.0 ],
+=======
+					"presentation_rect" : [ 8.0, 33.0, 48.0, 20.0 ],
+>>>>>>> master:max/LFO.maxpat
 					"style" : "",
 					"text" : "On"
 				}
@@ -289,7 +293,11 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 808.0, 569.0, 100.0, 20.0 ],
 					"presentation" : 1,
+<<<<<<< HEAD:max/LFOgordon.maxpat
 					"presentation_rect" : [ 316.0, 158.0, 83.0, 20.0 ],
+=======
+					"presentation_rect" : [ 316.0, 158.0, 83.0, 22.0 ],
+>>>>>>> master:max/LFO.maxpat
 					"style" : ""
 				}
 
@@ -306,7 +314,11 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 808.0, 411.0, 100.0, 20.0 ],
 					"presentation" : 1,
+<<<<<<< HEAD:max/LFOgordon.maxpat
 					"presentation_rect" : [ 316.0, 107.0, 83.0, 20.0 ],
+=======
+					"presentation_rect" : [ 316.0, 107.0, 83.0, 22.0 ],
+>>>>>>> master:max/LFO.maxpat
 					"style" : ""
 				}
 
@@ -333,7 +345,11 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 808.0, 510.0, 103.0, 18.0 ],
 					"presentation" : 1,
+<<<<<<< HEAD:max/LFOgordon.maxpat
 					"presentation_rect" : [ 316.0, 136.0, 86.0, 18.0 ],
+=======
+					"presentation_rect" : [ 316.0, 136.0, 83.0, 20.0 ],
+>>>>>>> master:max/LFO.maxpat
 					"style" : "",
 					"text" : "Destination 3"
 				}
@@ -361,7 +377,11 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 808.0, 352.0, 103.0, 18.0 ],
 					"presentation" : 1,
+<<<<<<< HEAD:max/LFOgordon.maxpat
 					"presentation_rect" : [ 316.0, 85.0, 86.0, 18.0 ],
+=======
+					"presentation_rect" : [ 316.0, 85.0, 83.0, 20.0 ],
+>>>>>>> master:max/LFO.maxpat
 					"style" : "",
 					"text" : "Destination 2"
 				}
@@ -389,7 +409,11 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 808.0, 192.0, 100.0, 18.0 ],
 					"presentation" : 1,
+<<<<<<< HEAD:max/LFOgordon.maxpat
 					"presentation_rect" : [ 316.0, 33.0, 83.0, 18.0 ],
+=======
+					"presentation_rect" : [ 316.0, 33.0, 83.0, 20.0 ],
+>>>>>>> master:max/LFO.maxpat
 					"style" : "",
 					"text" : "Destination 1"
 				}
@@ -407,7 +431,11 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 808.0, 251.0, 100.0, 20.0 ],
 					"presentation" : 1,
+<<<<<<< HEAD:max/LFOgordon.maxpat
 					"presentation_rect" : [ 316.0, 55.0, 83.0, 20.0 ],
+=======
+					"presentation_rect" : [ 316.0, 55.0, 83.0, 22.0 ],
+>>>>>>> master:max/LFO.maxpat
 					"style" : ""
 				}
 
@@ -486,7 +514,11 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 642.0, 431.0, 148.0, 20.0 ],
 					"presentation" : 1,
+<<<<<<< HEAD:max/LFOgordon.maxpat
 					"presentation_rect" : [ 227.0, 158.5, 79.0, 20.0 ],
+=======
+					"presentation_rect" : [ 227.0, 158.5, 79.0, 22.0 ],
+>>>>>>> master:max/LFO.maxpat
 					"style" : "",
 					"text" : "0."
 				}
@@ -517,7 +549,11 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 719.0, 220.0, 30.0, 20.0 ],
 					"presentation" : 1,
+<<<<<<< HEAD:max/LFOgordon.maxpat
 					"presentation_rect" : [ 228.0, 55.0, 76.0, 20.0 ],
+=======
+					"presentation_rect" : [ 228.0, 55.0, 76.0, 22.0 ],
+>>>>>>> master:max/LFO.maxpat
 					"style" : ""
 				}
 
@@ -531,7 +567,11 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 639.0, 192.0, 158.0, 18.0 ],
 					"presentation" : 1,
+<<<<<<< HEAD:max/LFOgordon.maxpat
 					"presentation_rect" : [ 228.0, 33.0, 80.0, 18.0 ],
+=======
+					"presentation_rect" : [ 228.0, 33.0, 76.0, 20.0 ],
+>>>>>>> master:max/LFO.maxpat
 					"style" : "",
 					"text" : "Offset"
 				}
@@ -604,7 +644,11 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 451.0, 431.0, 148.0, 20.0 ],
 					"presentation" : 1,
+<<<<<<< HEAD:max/LFOgordon.maxpat
 					"presentation_rect" : [ 142.0, 158.5, 79.0, 20.0 ],
+=======
+					"presentation_rect" : [ 142.0, 158.5, 79.0, 22.0 ],
+>>>>>>> master:max/LFO.maxpat
 					"style" : "",
 					"text" : "0. %"
 				}
@@ -624,7 +668,11 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 533.0, 220.0, 66.0, 20.0 ],
 					"presentation" : 1,
+<<<<<<< HEAD:max/LFOgordon.maxpat
 					"presentation_rect" : [ 143.0, 55.0, 76.0, 20.0 ],
+=======
+					"presentation_rect" : [ 143.0, 55.0, 76.0, 22.0 ],
+>>>>>>> master:max/LFO.maxpat
 					"style" : ""
 				}
 
@@ -638,7 +686,11 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 451.0, 192.0, 147.0, 18.0 ],
 					"presentation" : 1,
+<<<<<<< HEAD:max/LFOgordon.maxpat
 					"presentation_rect" : [ 143.0, 33.0, 78.0, 18.0 ],
+=======
+					"presentation_rect" : [ 143.0, 33.0, 76.0, 20.0 ],
+>>>>>>> master:max/LFO.maxpat
 					"style" : "",
 					"text" : "Depth"
 				}
@@ -697,7 +749,11 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 260.0, 431.0, 155.0, 20.0 ],
 					"presentation" : 1,
+<<<<<<< HEAD:max/LFOgordon.maxpat
 					"presentation_rect" : [ 59.0, 158.5, 81.0, 20.0 ],
+=======
+					"presentation_rect" : [ 59.0, 158.5, 77.0, 22.0 ],
+>>>>>>> master:max/LFO.maxpat
 					"style" : "",
 					"text" : "0.37306 hz"
 				}
@@ -717,7 +773,11 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 260.0, 220.0, 148.0, 20.0 ],
 					"presentation" : 1,
+<<<<<<< HEAD:max/LFOgordon.maxpat
 					"presentation_rect" : [ 59.0, 55.0, 76.0, 20.0 ],
+=======
+					"presentation_rect" : [ 59.0, 55.0, 76.0, 22.0 ],
+>>>>>>> master:max/LFO.maxpat
 					"style" : ""
 				}
 
@@ -731,7 +791,11 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 260.0, 192.0, 139.0, 18.0 ],
 					"presentation" : 1,
+<<<<<<< HEAD:max/LFOgordon.maxpat
 					"presentation_rect" : [ 59.0, 33.0, 74.0, 18.0 ],
+=======
+					"presentation_rect" : [ 59.0, 33.0, 76.0, 20.0 ],
+>>>>>>> master:max/LFO.maxpat
 					"style" : "",
 					"text" : "Rate"
 				}
@@ -803,7 +867,11 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 162.5, 506.0, 35.0, 18.0 ],
 					"presentation" : 1,
+<<<<<<< HEAD:max/LFOgordon.maxpat
 					"presentation_rect" : [ 8.0, 112.0, 45.0, 18.0 ],
+=======
+					"presentation_rect" : [ 8.0, 112.0, 46.0, 20.0 ],
+>>>>>>> master:max/LFO.maxpat
 					"style" : "",
 					"text" : "Sine"
 				}

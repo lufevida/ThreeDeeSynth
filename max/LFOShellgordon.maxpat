@@ -9,7 +9,11 @@
 			"modernui" : 1
 		}
 ,
+<<<<<<< HEAD
 		"rect" : [ 620.0, 79.0, 481.0, 783.0 ],
+=======
+		"rect" : [ 34.0, 79.0, 1372.0, 783.0 ],
+>>>>>>> master
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -64,6 +68,7 @@
 			}
 , 			{
 				"box" : 				{
+<<<<<<< HEAD
 					"id" : "obj-10",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -100,6 +105,8 @@
 			}
 , 			{
 				"box" : 				{
+=======
+>>>>>>> master
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -108,7 +115,11 @@
 					"id" : "obj-5",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
+<<<<<<< HEAD
 					"name" : "LFOgordon.maxpat",
+=======
+					"name" : "LFO.maxpat",
+>>>>>>> master
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
@@ -129,7 +140,11 @@
 					"id" : "obj-4",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
+<<<<<<< HEAD
 					"name" : "LFOgordon.maxpat",
+=======
+					"name" : "LFO.maxpat",
+>>>>>>> master
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
@@ -223,7 +238,11 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 443.0, 141.0, 64.0, 20.0 ],
+<<<<<<< HEAD
 					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 620, 79, 1101, 862, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
+=======
+					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 34, 79, 1406, 862, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
+>>>>>>> master
 					"style" : "",
 					"text" : "thispatcher"
 				}
@@ -239,7 +258,11 @@
 					"id" : "obj-1",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
+<<<<<<< HEAD
 					"name" : "LFOgordon.maxpat",
+=======
+					"name" : "LFO.maxpat",
+>>>>>>> master
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
@@ -307,7 +330,11 @@
 			}
  ],
 		"dependency_cache" : [ 			{
+<<<<<<< HEAD
 				"name" : "LFOgordon.maxpat",
+=======
+				"name" : "LFO.maxpat",
+>>>>>>> master
 				"bootpath" : "~/Desktop/ThreeDeeSynth/max",
 				"type" : "JSON",
 				"implicit" : 1
