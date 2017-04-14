@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
-			"architecture" : "x64",
+			"revision" : 1,
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 346.0, 158.0, 1060.0, 623.0 ],
+		"rect" : [ 346.0, 158.0, 963.0, 623.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -138,7 +138,7 @@
 					"id" : "obj-1",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "LFOShell.maxpat",
+					"name" : "LFOShellgordon.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
@@ -169,48 +169,38 @@
 				}
 
 			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 693.5, 368.5, 506.5, 368.5, 506.5, 26.0, 57.5, 26.0 ],
-					"source" : [ "obj-5", 0 ]
-				}
-
-			}
  ],
 		"parameters" : 		{
 			"obj-3" : [ "Tabs", "Tabs", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "LFOShell.maxpat",
-				"bootpath" : "~/Documents/workspace2/ThreeDeeSynth/max",
+				"name" : "LFOShellgordon.maxpat",
+				"bootpath" : "~/Desktop/ThreeDeeSynth/max",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "LFO.maxpat",
-				"bootpath" : "~/Documents/workspace2/ThreeDeeSynth/max",
+				"name" : "LFOgordon.maxpat",
+				"bootpath" : "~/Desktop/ThreeDeeSynth/max",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sineCreation.maxpat",
-				"bootpath" : "~/Documents/workspace2/ThreeDeeSynth/max",
+				"bootpath" : "~/Desktop/ThreeDeeSynth/max",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LFORouterBox.maxpat",
-				"bootpath" : "~/Documents/workspace2/ThreeDeeSynth/max",
+				"bootpath" : "~/Desktop/ThreeDeeSynth/max",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LFORouteAndScale.maxpat",
-				"bootpath" : "~/Documents/workspace2/ThreeDeeSynth/max",
+				"bootpath" : "~/Desktop/ThreeDeeSynth/max",
 				"type" : "JSON",
 				"implicit" : 1
 			}

@@ -4,28 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
-			"architecture" : "x64",
+			"revision" : 1,
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-<<<<<<< HEAD:max/LFOShellgordon.maxpat
-<<<<<<< HEAD:max/LFOShellgordon.maxpat
-<<<<<<< HEAD:max/LFOShellgordon.maxpat
-<<<<<<< HEAD
-		"rect" : [ 620.0, 79.0, 481.0, 783.0 ],
-=======
-		"rect" : [ 34.0, 79.0, 1372.0, 783.0 ],
->>>>>>> master
-=======
-		"rect" : [ 728.0, 78.0, 769.0, 933.0 ],
->>>>>>> parent of 9b3f9e4... renamed files for commit:max/LFOShell.maxpat
-=======
-		"rect" : [ 728.0, 78.0, 769.0, 933.0 ],
->>>>>>> parent of 9b3f9e4... renamed files for commit:max/LFOShell.maxpat
-=======
-		"rect" : [ 620.0, 79.0, 481.0, 783.0 ],
->>>>>>> parent of 397eac9... Merge branch 'master' into Gordon's-Branch:max/LFOShell.maxpat
+		"rect" : [ 691.0, 79.0, 550.0, 783.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -124,23 +108,7 @@
 					"id" : "obj-5",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-<<<<<<< HEAD:max/LFOShellgordon.maxpat
-<<<<<<< HEAD:max/LFOShellgordon.maxpat
-<<<<<<< HEAD:max/LFOShellgordon.maxpat
-<<<<<<< HEAD
 					"name" : "LFOgordon.maxpat",
-=======
-					"name" : "LFO.maxpat",
->>>>>>> master
-=======
-					"name" : "LFO.maxpat",
->>>>>>> parent of 9b3f9e4... renamed files for commit:max/LFOShell.maxpat
-=======
-					"name" : "LFO.maxpat",
->>>>>>> parent of 9b3f9e4... renamed files for commit:max/LFOShell.maxpat
-=======
-					"name" : "LFOgordon.maxpat",
->>>>>>> parent of 397eac9... Merge branch 'master' into Gordon's-Branch:max/LFOShell.maxpat
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
@@ -161,23 +129,7 @@
 					"id" : "obj-4",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-<<<<<<< HEAD:max/LFOShellgordon.maxpat
-<<<<<<< HEAD:max/LFOShellgordon.maxpat
-<<<<<<< HEAD:max/LFOShellgordon.maxpat
-<<<<<<< HEAD
 					"name" : "LFOgordon.maxpat",
-=======
-					"name" : "LFO.maxpat",
->>>>>>> master
-=======
-					"name" : "LFO.maxpat",
->>>>>>> parent of 9b3f9e4... renamed files for commit:max/LFOShell.maxpat
-=======
-					"name" : "LFO.maxpat",
->>>>>>> parent of 9b3f9e4... renamed files for commit:max/LFOShell.maxpat
-=======
-					"name" : "LFOgordon.maxpat",
->>>>>>> parent of 397eac9... Merge branch 'master' into Gordon's-Branch:max/LFOShell.maxpat
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
@@ -252,7 +204,6 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-11",
-					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -272,23 +223,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 443.0, 141.0, 64.0, 20.0 ],
-<<<<<<< HEAD:max/LFOShellgordon.maxpat
-<<<<<<< HEAD:max/LFOShellgordon.maxpat
-<<<<<<< HEAD:max/LFOShellgordon.maxpat
-<<<<<<< HEAD
-					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 620, 79, 1101, 862, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
-=======
-					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 34, 79, 1406, 862, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
->>>>>>> master
-=======
-					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 728, 78, 1497, 1011, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
->>>>>>> parent of 9b3f9e4... renamed files for commit:max/LFOShell.maxpat
-=======
-					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 728, 78, 1497, 1011, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
->>>>>>> parent of 9b3f9e4... renamed files for commit:max/LFOShell.maxpat
-=======
-					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 620, 79, 1101, 862, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
->>>>>>> parent of 397eac9... Merge branch 'master' into Gordon's-Branch:max/LFOShell.maxpat
+					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 691, 79, 1241, 862, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
 					"style" : "",
 					"text" : "thispatcher"
 				}
@@ -304,23 +239,7 @@
 					"id" : "obj-1",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-<<<<<<< HEAD:max/LFOShellgordon.maxpat
-<<<<<<< HEAD:max/LFOShellgordon.maxpat
-<<<<<<< HEAD:max/LFOShellgordon.maxpat
-<<<<<<< HEAD
 					"name" : "LFOgordon.maxpat",
-=======
-					"name" : "LFO.maxpat",
->>>>>>> master
-=======
-					"name" : "LFO.maxpat",
->>>>>>> parent of 9b3f9e4... renamed files for commit:max/LFOShell.maxpat
-=======
-					"name" : "LFO.maxpat",
->>>>>>> parent of 9b3f9e4... renamed files for commit:max/LFOShell.maxpat
-=======
-					"name" : "LFOgordon.maxpat",
->>>>>>> parent of 397eac9... Merge branch 'master' into Gordon's-Branch:max/LFOShell.maxpat
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
@@ -388,40 +307,26 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-<<<<<<< HEAD:max/LFOShellgordon.maxpat
-<<<<<<< HEAD:max/LFOShellgordon.maxpat
-<<<<<<< HEAD:max/LFOShellgordon.maxpat
-<<<<<<< HEAD
-=======
->>>>>>> parent of 397eac9... Merge branch 'master' into Gordon's-Branch:max/LFOShell.maxpat
 				"name" : "LFOgordon.maxpat",
 				"bootpath" : "~/Desktop/ThreeDeeSynth/max",
-=======
-				"name" : "LFO.maxpat",
-				"bootpath" : "~/Documents/workspace2/ThreeDeeSynth/max",
->>>>>>> parent of 9b3f9e4... renamed files for commit:max/LFOShell.maxpat
-=======
-				"name" : "LFO.maxpat",
-				"bootpath" : "~/Documents/workspace2/ThreeDeeSynth/max",
->>>>>>> parent of 9b3f9e4... renamed files for commit:max/LFOShell.maxpat
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sineCreation.maxpat",
-				"bootpath" : "~/Documents/workspace2/ThreeDeeSynth/max",
+				"bootpath" : "~/Desktop/ThreeDeeSynth/max",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LFORouterBox.maxpat",
-				"bootpath" : "~/Documents/workspace2/ThreeDeeSynth/max",
+				"bootpath" : "~/Desktop/ThreeDeeSynth/max",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LFORouteAndScale.maxpat",
-				"bootpath" : "~/Documents/workspace2/ThreeDeeSynth/max",
+				"bootpath" : "~/Desktop/ThreeDeeSynth/max",
 				"type" : "JSON",
 				"implicit" : 1
 			}

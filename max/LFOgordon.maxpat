@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
-			"architecture" : "x64",
+			"revision" : 1,
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 57.0, 78.0, 1150.0, 684.0 ],
+		"rect" : [ 57.0, 79.0, 845.0, 684.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -137,13 +137,14 @@
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Univia Pro Regular",
 					"id" : "obj-15",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 127.0, 275.0, 150.0, 20.0 ],
+					"patching_rect" : [ 127.0, 275.0, 144.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.0, 33.0, 48.0, 20.0 ],
+					"presentation_rect" : [ 8.0, 33.0, 47.0, 18.0 ],
 					"style" : "",
 					"text" : "On"
 				}
@@ -278,6 +279,7 @@
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Univia Pro Regular",
 					"id" : "obj-33",
 					"items" : [ "None", ",", "Filter", "Cutoff", ",", "Filter", "Resonance", ",", "AM", "Depth", ",", "FM", "Index", ",", "Osc.", 1, "Gain", ",", "Osc.", 2, "Gain", ",", "Osc.", 3, "Gain" ],
 					"maxclass" : "umenu",
@@ -287,13 +289,14 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 808.0, 569.0, 100.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 316.0, 158.0, 83.0, 22.0 ],
+					"presentation_rect" : [ 316.0, 158.0, 83.0, 20.0 ],
 					"style" : ""
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Univia Pro Regular",
 					"id" : "obj-34",
 					"items" : [ "None", ",", "Filter", "Cutoff", ",", "Filter", "Resonance", ",", "AM", "Depth", ",", "FM", "Index", ",", "Osc.", 1, "Gain", ",", "Osc.", 2, "Gain", ",", "Osc.", 3, "Gain" ],
 					"maxclass" : "umenu",
@@ -303,7 +306,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 808.0, 411.0, 100.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 316.0, 107.0, 83.0, 22.0 ],
+					"presentation_rect" : [ 316.0, 107.0, 83.0, 20.0 ],
 					"style" : ""
 				}
 
@@ -323,13 +326,14 @@
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Univia Pro Regular",
 					"id" : "obj-80",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 808.0, 510.0, 100.0, 20.0 ],
+					"patching_rect" : [ 808.0, 510.0, 103.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 316.0, 136.0, 83.0, 20.0 ],
+					"presentation_rect" : [ 316.0, 136.0, 86.0, 18.0 ],
 					"style" : "",
 					"text" : "Destination 3"
 				}
@@ -350,13 +354,14 @@
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Univia Pro Regular",
 					"id" : "obj-77",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 808.0, 352.0, 100.0, 20.0 ],
+					"patching_rect" : [ 808.0, 352.0, 103.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 316.0, 85.0, 83.0, 20.0 ],
+					"presentation_rect" : [ 316.0, 85.0, 86.0, 18.0 ],
 					"style" : "",
 					"text" : "Destination 2"
 				}
@@ -377,13 +382,14 @@
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Univia Pro Regular",
 					"id" : "obj-46",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 808.0, 192.0, 100.0, 20.0 ],
+					"patching_rect" : [ 808.0, 192.0, 100.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 316.0, 33.0, 83.0, 20.0 ],
+					"presentation_rect" : [ 316.0, 33.0, 83.0, 18.0 ],
 					"style" : "",
 					"text" : "Destination 1"
 				}
@@ -391,6 +397,7 @@
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Univia Pro Regular",
 					"id" : "obj-38",
 					"items" : [ "None", ",", "Filter", "Cutoff", ",", "Filter", "Resonance", ",", "AM", "Depth", ",", "FM", "Index", ",", "Osc.", 1, "Gain", ",", "Osc.", 2, "Gain", ",", "Osc.", 3, "Gain" ],
 					"maxclass" : "umenu",
@@ -400,7 +407,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 808.0, 251.0, 100.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 316.0, 55.0, 83.0, 22.0 ],
+					"presentation_rect" : [ 316.0, 55.0, 83.0, 20.0 ],
 					"style" : ""
 				}
 
@@ -470,15 +477,16 @@
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Univia Pro Regular",
 					"id" : "obj-43",
 					"ignoreclick" : 1,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 642.0, 431.0, 148.0, 22.0 ],
+					"patching_rect" : [ 642.0, 431.0, 148.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 227.0, 158.5, 79.0, 22.0 ],
+					"presentation_rect" : [ 227.0, 158.5, 79.0, 20.0 ],
 					"style" : "",
 					"text" : "0."
 				}
@@ -499,6 +507,7 @@
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Univia Pro Regular",
 					"format" : 6,
 					"id" : "obj-82",
 					"maxclass" : "flonum",
@@ -506,22 +515,23 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 719.0, 220.0, 30.0, 22.0 ],
+					"patching_rect" : [ 719.0, 220.0, 30.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 228.0, 55.0, 76.0, 22.0 ],
+					"presentation_rect" : [ 228.0, 55.0, 76.0, 20.0 ],
 					"style" : ""
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Univia Pro Regular",
 					"id" : "obj-66",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 639.0, 192.0, 150.0, 20.0 ],
+					"patching_rect" : [ 639.0, 192.0, 158.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 228.0, 33.0, 76.0, 20.0 ],
+					"presentation_rect" : [ 228.0, 33.0, 80.0, 18.0 ],
 					"style" : "",
 					"text" : "Offset"
 				}
@@ -585,15 +595,16 @@
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Univia Pro Regular",
 					"id" : "obj-42",
 					"ignoreclick" : 1,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 451.0, 431.0, 148.0, 22.0 ],
+					"patching_rect" : [ 451.0, 431.0, 148.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 142.0, 158.5, 79.0, 22.0 ],
+					"presentation_rect" : [ 142.0, 158.5, 79.0, 20.0 ],
 					"style" : "",
 					"text" : "0. %"
 				}
@@ -601,6 +612,7 @@
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Univia Pro Regular",
 					"format" : 6,
 					"id" : "obj-70",
 					"maxclass" : "flonum",
@@ -610,22 +622,23 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 533.0, 220.0, 66.0, 22.0 ],
+					"patching_rect" : [ 533.0, 220.0, 66.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 143.0, 55.0, 76.0, 22.0 ],
+					"presentation_rect" : [ 143.0, 55.0, 76.0, 20.0 ],
 					"style" : ""
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Univia Pro Regular",
 					"id" : "obj-71",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 451.0, 192.0, 143.0, 20.0 ],
+					"patching_rect" : [ 451.0, 192.0, 147.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 143.0, 33.0, 76.0, 20.0 ],
+					"presentation_rect" : [ 143.0, 33.0, 78.0, 18.0 ],
 					"style" : "",
 					"text" : "Depth"
 				}
@@ -675,15 +688,16 @@
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Univia Pro Regular",
 					"id" : "obj-60",
 					"ignoreclick" : 1,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 260.0, 431.0, 148.0, 22.0 ],
+					"patching_rect" : [ 260.0, 431.0, 155.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 59.0, 158.5, 77.0, 22.0 ],
+					"presentation_rect" : [ 59.0, 158.5, 81.0, 20.0 ],
 					"style" : "",
 					"text" : "0.37306 hz"
 				}
@@ -691,6 +705,7 @@
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Univia Pro Regular",
 					"format" : 6,
 					"id" : "obj-61",
 					"maxclass" : "flonum",
@@ -700,22 +715,23 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 260.0, 220.0, 148.0, 22.0 ],
+					"patching_rect" : [ 260.0, 220.0, 148.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 59.0, 55.0, 76.0, 22.0 ],
+					"presentation_rect" : [ 59.0, 55.0, 76.0, 20.0 ],
 					"style" : ""
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Univia Pro Regular",
 					"id" : "obj-2",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 260.0, 192.0, 143.0, 20.0 ],
+					"patching_rect" : [ 260.0, 192.0, 139.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 59.0, 33.0, 76.0, 20.0 ],
+					"presentation_rect" : [ 59.0, 33.0, 74.0, 18.0 ],
 					"style" : "",
 					"text" : "Rate"
 				}
@@ -780,13 +796,14 @@
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Univia Pro Regular",
 					"id" : "obj-45",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 162.5, 506.0, 36.0, 20.0 ],
+					"patching_rect" : [ 162.5, 506.0, 35.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.0, 112.0, 46.0, 20.0 ],
+					"presentation_rect" : [ 8.0, 112.0, 45.0, 18.0 ],
 					"style" : "",
 					"text" : "Sine"
 				}
@@ -1113,7 +1130,7 @@
 					"destination" : [ "obj-60", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 350.5, 429.25, 398.5, 429.25 ],
+					"midpoints" : [ 350.5, 429.25, 405.5, 429.25 ],
 					"source" : [ "obj-44", 0 ]
 				}
 
@@ -1154,7 +1171,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 567.5, 607.0, 595.5, 607.0, 595.5, 507.5, 654.5, 507.5 ],
-					"order" : 1,
 					"source" : [ "obj-51", 0 ]
 				}
 
@@ -1164,7 +1180,6 @@
 					"destination" : [ "obj-125", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 2,
 					"source" : [ "obj-51", 0 ]
 				}
 
@@ -1175,7 +1190,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 567.5, 607.0, 594.0, 607.0, 594.0, 496.0, 778.5, 496.0 ],
-					"order" : 0,
 					"source" : [ "obj-51", 0 ]
 				}
 
@@ -1205,7 +1219,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 648.5, 405.0, 676.5, 405.0 ],
-					"order" : 0,
 					"source" : [ "obj-64", 0 ]
 				}
 
@@ -1216,7 +1229,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 648.5, 475.25, 579.5, 475.25 ],
-					"order" : 1,
 					"source" : [ "obj-64", 0 ]
 				}
 
@@ -1257,7 +1269,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 460.5, 405.0, 477.0, 405.0 ],
-					"order" : 1,
 					"source" : [ "obj-72", 0 ]
 				}
 
@@ -1268,7 +1279,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 460.5, 461.0, 564.5, 461.0 ],
-					"order" : 0,
 					"source" : [ "obj-72", 0 ]
 				}
 
@@ -1287,7 +1297,6 @@
 					"destination" : [ "obj-13", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 1,
 					"source" : [ "obj-76", 0 ]
 				}
 
@@ -1298,7 +1307,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 269.5, 405.0, 350.5, 405.0 ],
-					"order" : 0,
 					"source" : [ "obj-76", 0 ]
 				}
 
@@ -1355,19 +1363,19 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "sineCreation.maxpat",
-				"bootpath" : "~/Documents/workspace2/ThreeDeeSynth/max",
+				"bootpath" : "~/Desktop/ThreeDeeSynth/max",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LFORouterBox.maxpat",
-				"bootpath" : "~/Documents/workspace2/ThreeDeeSynth/max",
+				"bootpath" : "~/Desktop/ThreeDeeSynth/max",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LFORouteAndScale.maxpat",
-				"bootpath" : "~/Documents/workspace2/ThreeDeeSynth/max",
+				"bootpath" : "~/Desktop/ThreeDeeSynth/max",
 				"type" : "JSON",
 				"implicit" : 1
 			}
