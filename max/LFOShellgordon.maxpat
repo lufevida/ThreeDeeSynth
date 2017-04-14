@@ -10,11 +10,15 @@
 		}
 ,
 <<<<<<< HEAD:max/LFOShellgordon.maxpat
+<<<<<<< HEAD:max/LFOShellgordon.maxpat
 <<<<<<< HEAD
 		"rect" : [ 620.0, 79.0, 481.0, 783.0 ],
 =======
 		"rect" : [ 34.0, 79.0, 1372.0, 783.0 ],
 >>>>>>> master
+=======
+		"rect" : [ 728.0, 78.0, 769.0, 933.0 ],
+>>>>>>> parent of 9b3f9e4... renamed files for commit:max/LFOShell.maxpat
 =======
 		"rect" : [ 728.0, 78.0, 769.0, 933.0 ],
 >>>>>>> parent of 9b3f9e4... renamed files for commit:max/LFOShell.maxpat
@@ -120,11 +124,15 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 <<<<<<< HEAD:max/LFOShellgordon.maxpat
+<<<<<<< HEAD:max/LFOShellgordon.maxpat
 <<<<<<< HEAD
 					"name" : "LFOgordon.maxpat",
 =======
 					"name" : "LFO.maxpat",
 >>>>>>> master
+=======
+					"name" : "LFO.maxpat",
+>>>>>>> parent of 9b3f9e4... renamed files for commit:max/LFOShell.maxpat
 =======
 					"name" : "LFO.maxpat",
 >>>>>>> parent of 9b3f9e4... renamed files for commit:max/LFOShell.maxpat
@@ -149,11 +157,15 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 <<<<<<< HEAD:max/LFOShellgordon.maxpat
+<<<<<<< HEAD:max/LFOShellgordon.maxpat
 <<<<<<< HEAD
 					"name" : "LFOgordon.maxpat",
 =======
 					"name" : "LFO.maxpat",
 >>>>>>> master
+=======
+					"name" : "LFO.maxpat",
+>>>>>>> parent of 9b3f9e4... renamed files for commit:max/LFOShell.maxpat
 =======
 					"name" : "LFO.maxpat",
 >>>>>>> parent of 9b3f9e4... renamed files for commit:max/LFOShell.maxpat
@@ -252,11 +264,15 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 443.0, 141.0, 64.0, 20.0 ],
 <<<<<<< HEAD:max/LFOShellgordon.maxpat
+<<<<<<< HEAD:max/LFOShellgordon.maxpat
 <<<<<<< HEAD
 					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 620, 79, 1101, 862, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
 =======
 					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 34, 79, 1406, 862, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
 >>>>>>> master
+=======
+					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 728, 78, 1497, 1011, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
+>>>>>>> parent of 9b3f9e4... renamed files for commit:max/LFOShell.maxpat
 =======
 					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 728, 78, 1497, 1011, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
 >>>>>>> parent of 9b3f9e4... renamed files for commit:max/LFOShell.maxpat
@@ -276,11 +292,15 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 <<<<<<< HEAD:max/LFOShellgordon.maxpat
+<<<<<<< HEAD:max/LFOShellgordon.maxpat
 <<<<<<< HEAD
 					"name" : "LFOgordon.maxpat",
 =======
 					"name" : "LFO.maxpat",
 >>>>>>> master
+=======
+					"name" : "LFO.maxpat",
+>>>>>>> parent of 9b3f9e4... renamed files for commit:max/LFOShell.maxpat
 =======
 					"name" : "LFO.maxpat",
 >>>>>>> parent of 9b3f9e4... renamed files for commit:max/LFOShell.maxpat
@@ -352,12 +372,17 @@
  ],
 		"dependency_cache" : [ 			{
 <<<<<<< HEAD:max/LFOShellgordon.maxpat
+<<<<<<< HEAD:max/LFOShellgordon.maxpat
 <<<<<<< HEAD
 				"name" : "LFOgordon.maxpat",
 =======
 				"name" : "LFO.maxpat",
 >>>>>>> master
 				"bootpath" : "~/Desktop/ThreeDeeSynth/max",
+=======
+				"name" : "LFO.maxpat",
+				"bootpath" : "~/Documents/workspace2/ThreeDeeSynth/max",
+>>>>>>> parent of 9b3f9e4... renamed files for commit:max/LFOShell.maxpat
 =======
 				"name" : "LFO.maxpat",
 				"bootpath" : "~/Documents/workspace2/ThreeDeeSynth/max",
