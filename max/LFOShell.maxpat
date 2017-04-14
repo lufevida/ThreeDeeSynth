@@ -11,6 +11,7 @@
 ,
 <<<<<<< HEAD:max/LFOShellgordon.maxpat
 <<<<<<< HEAD:max/LFOShellgordon.maxpat
+<<<<<<< HEAD:max/LFOShellgordon.maxpat
 <<<<<<< HEAD
 		"rect" : [ 620.0, 79.0, 481.0, 783.0 ],
 =======
@@ -22,6 +23,9 @@
 =======
 		"rect" : [ 728.0, 78.0, 769.0, 933.0 ],
 >>>>>>> parent of 9b3f9e4... renamed files for commit:max/LFOShell.maxpat
+=======
+		"rect" : [ 620.0, 79.0, 481.0, 783.0 ],
+>>>>>>> parent of 397eac9... Merge branch 'master' into Gordon's-Branch:max/LFOShell.maxpat
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -76,7 +80,6 @@
 			}
 , 			{
 				"box" : 				{
-<<<<<<< HEAD
 					"id" : "obj-10",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -113,8 +116,6 @@
 			}
 , 			{
 				"box" : 				{
-=======
->>>>>>> master
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -123,6 +124,7 @@
 					"id" : "obj-5",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
+<<<<<<< HEAD:max/LFOShellgordon.maxpat
 <<<<<<< HEAD:max/LFOShellgordon.maxpat
 <<<<<<< HEAD:max/LFOShellgordon.maxpat
 <<<<<<< HEAD
@@ -136,6 +138,9 @@
 =======
 					"name" : "LFO.maxpat",
 >>>>>>> parent of 9b3f9e4... renamed files for commit:max/LFOShell.maxpat
+=======
+					"name" : "LFOgordon.maxpat",
+>>>>>>> parent of 397eac9... Merge branch 'master' into Gordon's-Branch:max/LFOShell.maxpat
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
@@ -158,6 +163,7 @@
 					"maxclass" : "bpatcher",
 <<<<<<< HEAD:max/LFOShellgordon.maxpat
 <<<<<<< HEAD:max/LFOShellgordon.maxpat
+<<<<<<< HEAD:max/LFOShellgordon.maxpat
 <<<<<<< HEAD
 					"name" : "LFOgordon.maxpat",
 =======
@@ -169,6 +175,9 @@
 =======
 					"name" : "LFO.maxpat",
 >>>>>>> parent of 9b3f9e4... renamed files for commit:max/LFOShell.maxpat
+=======
+					"name" : "LFOgordon.maxpat",
+>>>>>>> parent of 397eac9... Merge branch 'master' into Gordon's-Branch:max/LFOShell.maxpat
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
@@ -265,6 +274,7 @@
 					"patching_rect" : [ 443.0, 141.0, 64.0, 20.0 ],
 <<<<<<< HEAD:max/LFOShellgordon.maxpat
 <<<<<<< HEAD:max/LFOShellgordon.maxpat
+<<<<<<< HEAD:max/LFOShellgordon.maxpat
 <<<<<<< HEAD
 					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 620, 79, 1101, 862, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
 =======
@@ -276,6 +286,9 @@
 =======
 					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 728, 78, 1497, 1011, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
 >>>>>>> parent of 9b3f9e4... renamed files for commit:max/LFOShell.maxpat
+=======
+					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 620, 79, 1101, 862, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
+>>>>>>> parent of 397eac9... Merge branch 'master' into Gordon's-Branch:max/LFOShell.maxpat
 					"style" : "",
 					"text" : "thispatcher"
 				}
@@ -293,6 +306,7 @@
 					"maxclass" : "bpatcher",
 <<<<<<< HEAD:max/LFOShellgordon.maxpat
 <<<<<<< HEAD:max/LFOShellgordon.maxpat
+<<<<<<< HEAD:max/LFOShellgordon.maxpat
 <<<<<<< HEAD
 					"name" : "LFOgordon.maxpat",
 =======
@@ -304,6 +318,9 @@
 =======
 					"name" : "LFO.maxpat",
 >>>>>>> parent of 9b3f9e4... renamed files for commit:max/LFOShell.maxpat
+=======
+					"name" : "LFOgordon.maxpat",
+>>>>>>> parent of 397eac9... Merge branch 'master' into Gordon's-Branch:max/LFOShell.maxpat
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
@@ -373,11 +390,11 @@
 		"dependency_cache" : [ 			{
 <<<<<<< HEAD:max/LFOShellgordon.maxpat
 <<<<<<< HEAD:max/LFOShellgordon.maxpat
+<<<<<<< HEAD:max/LFOShellgordon.maxpat
 <<<<<<< HEAD
-				"name" : "LFOgordon.maxpat",
 =======
-				"name" : "LFO.maxpat",
->>>>>>> master
+>>>>>>> parent of 397eac9... Merge branch 'master' into Gordon's-Branch:max/LFOShell.maxpat
+				"name" : "LFOgordon.maxpat",
 				"bootpath" : "~/Desktop/ThreeDeeSynth/max",
 =======
 				"name" : "LFO.maxpat",
