@@ -63,18 +63,6 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
-					"id" : "obj-26",
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 604.0, 612.0, 30.0, 30.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"attr" : "drawto",
 					"id" : "obj-25",
 					"maxclass" : "attrui",
@@ -1896,10 +1884,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-26", 0 ],
+					"destination" : [ "obj-29", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 613.5, 225.0, 453.0, 225.0, 453.0, 318.0, 477.0, 318.0, 477.0, 597.0, 613.5, 597.0 ],
+					"midpoints" : [ 613.5, 225.0, 453.0, 225.0, 453.0, 318.0, 477.0, 318.0, 477.0, 597.0, 515.5, 597.0 ],
 					"source" : [ "obj-16", 2 ]
 				}
 
