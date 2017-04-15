@@ -8,14 +8,18 @@ var z = 0;
 
 function convert(theta, phi, rho){
 	
-	this.rho = 5;
+	rho = 5;
 	
-	this.phi = Math.atan2(y, x);
+	//phi = Math.atan2(y, x);
 
-	this.theta = Math.acos(z / rho);
+	//theta = Math.acos(z / rho);
+	
+	//post(theta + "\n");
+	//post(phi + "\n");
+	//post(rho + "\n");
 
-	x = this.rho * Math.sin(theta) * Math.cos(phi);
-	y = this.rho * Math.sin(theta) * Math.sin(phi);
+	x = rho * Math.sin(theta) * Math.cos(phi);
+	y = rho * Math.sin(theta) * Math.sin(phi);
 	z = rho * Math.cos(theta);
 	
 	outlet(0, [x]);
