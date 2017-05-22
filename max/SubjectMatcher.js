@@ -600,9 +600,6 @@ function bang() {
 	var gordon = [1.55, 0.5, 1.05, 2.2, 6.05, 3.0, 0.45, 0.89, 24.5, 28.3]
 	var james = [1.75, 0.72, 1.3, 1.7, 6.0, 2.8, 0.45, 0.97, 25.0, 27.8]
 	post(getBestMatch(luis))
-	//console.log(getBestMatch(luis))
 	post(getBestMatch(gordon))
-	//console.log(getBestMatch(gordon))
 	post(getBestMatch(james))
-	//console.log(getBestMatch(james))
 }
